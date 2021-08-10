@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -12,92 +14,113 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <style>
-        .hidden {
-            display: none;
-        }
-        .vertical-scrollable> .row {
-          position: absolute;
-          top: 120px;
-          bottom: 100px;
-          left: 180px;
-          width: 50%;
-          overflow-y: scroll; 
-        }
-        .col-sm-10 { 
-            color: white; 
-            font-size: 24px; 
-            padding-bottom: 20px; 
-            padding-top: 18px; 
-        } 
-          
-        .col-sm-10:nth-child(2n+1) { 
-            background: green; 
-        } 
-          
-        .col-sm-10:nth-child(2n+2) { 
-            background: black; 
-        } 
-  
-    </style>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
     <title>See Your Message</title>
   </head>
-  <body class="bg-dark text-muted">
+  <body class=" text-muted bg-dark"">
     <!-- first header  -->
-    <h1 class="first-header text-center p-3 hidden">See Your Message!</h1>
+    <h1 class="first-header text-center p-3 ">Legends Are Here !</h1>
 
     <!-- login section -->
-    <div class="login-page container bg-secondary w-50 p-5 rounded hidden">
+    <div class="login-page container bg-secondary w-50 p-5 rounded mt-5">
         <div class="mb-5 text-center">
-            <h2 class="text-dark ">pleas login to account and send you message</h2>
+            <h2 class="text-dark ">buddy come in , legends need to you</h2>
         </div>
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control" placeholder="username" id="username_input">
+            <label for="floatingInput">User Name</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="password_input" placeholder="Password">
             <label for="floatingPassword">Password</label>
           </div>
           <div class="pt-4">
-            <button class="login-button btn btn-primary p-2 px-4 py-2">Login</button>
+            <button class="btn btn-primary p-2 px-4 py-2" id="login-button">Login</button>
           </div>
       </div>
     </div>
 
-    <!-- last header  -->
-    <h1 class="last-header text-center p-3 ">See Your Message!</h1>
-    <div class="message-box container bg-primary vertical-scrollable">
-      <div class="row text-center"> 
-          <div class="col-sm-10 p-4 text-center">
-            1</div> 
-          <div class="col-sm-8">
-            2</div> 
-          <div class="col-sm-8">
-            3</div> 
-          <div class="col-sm-8">
-            4</div> 
-          <div class="col-sm-8">
-            5</div> 
-          <div class="col-sm-8">
-            6</div> 
-          <div class="col-sm-8">
-            7</div> 
-          <div class="col-sm-8">
-            7</div> 
-          <div class="col-sm-8">
-            7</div> 
-          <div class="col-sm-8">
-            7</div> 
-          <div class="col-sm-8">
-            7</div> 
-      </div> 
+    <!-- message box -->
+    <div class="message-box card text-white bg-primary mb-3  container vertical-scrollable mt-5 hidden" style="max-width: 50rem;">
+      <div class="row card-header ">
+        <div class="user-name text-center">
+          <h5 class="last-header text-center p-3 ">Call The Legends</h5>
+        </div>
+      </div>
+      <div class="message_container container navbar-nav-scroll">
+        <div class="card-body vertical-scrollable">
+          <div class="row card-header ">
+            <div class="user-name text-center row">
+              <p class="col-md-9 m-0 text-center"><u>Kids Call Me Life</u></p>
+              <img class="col-md-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MRkGQgI11OH_5Zj45YX4HsQmfIfVXcYecw&usqp=CAU" alt="" style="width: 95px;">
+            </div>
+            <div class="card-body text-center">
+              <div class="btn btn-success ">
+            <p class="card-text">
+                  mr sherek is god , god of the world , skerek is life, sherek is love, i love you kids.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body vertical-scrollable">
+          <div class="row card-header ">
+            <div class="user-name text-center row">
+              <p class="col-md-9 m-0 text-center"><u>Pesar Khale </u></p>
+              <img class="col-md-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JlNNY4IVPv3DGu3rdIilDTBRoSQ7anlpRA&usqp=CAU" alt="" style="width: 95px;">
+            </div>
+            <div class="card-body text-center">
+              <div class="btn btn-success">
+              <p class="card-text">
+                  Hey Buddy This World Is like shit , so fuck the red hat my fucking brother , oh so god kill me i cant see this world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body vertical-scrollable">
+          <div class="row card-header ">
+            <div class="user-name text-center row">
+              <p class="col-md-9 m-0 text-center"><u>poorang savage</u></p>
+              <img class="col-md-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjZQbaxr8CXATIx_8A_zBs0IExvn3r3z9h0Q&usqp=CAU" alt="" style="width: 95px;">
+            </div>
+            <div class="card-body text-center">
+              <div class="btn btn-success">
+              <p class="card-text ">
+                    hey kid read with me : ordak tak tak <br>
+                  ordak tak tak <br>
+                  tak ordak<br>
+                  alone ordak is on the water  <br>
+                  ....
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-box container p-3">
+        <div class="row">
+          <div class="form-group col-md-10">
+            <textarea class="form-control " id="user_text" rows="3" style="resize: none;" placeholder="Send Your Message Here !"></textarea>
+          </div>
+         <div class="col-md-2 p-2">
+           <button class="send-message btn btn-dark p-3" >Send</button>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="ue_alert container bg-danger w-50 text-center p-5 text-white hidden" style="border-radius: 20px;">
+      <h2 class="p-3">pleas enter username and password</h2>
+      <hr>
+      <button class="btn-show-alert btn btn-primary px-4">Ok</button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="./app.js"></script>
   </body>
 </html>

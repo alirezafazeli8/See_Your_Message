@@ -1,0 +1,30 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.message-box {
+  height: 80vh;
+}
+
+.ue_alert {
+  position: relative;
+  bottom: 17rem;
+  left: 25rem;
+  margin: 0 !important;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .ue_alert {
+    position: relative;
+    bottom: 22rem;
+    left: 5.9rem;
+    margin: 0 !important;
+  }
+}
